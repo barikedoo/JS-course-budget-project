@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1920px;
+}
+
+#header {
+    min-height: 400px;
+    background-image: url('./images/header.jpg');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#info-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    align-items: center;
+}
+
+#info-block__header{
+    font-size: 30px;
+    color: wheat;
+    font-weight: 400;
+}
+
+#current-budget{    
+    font-size: 50px;
+    margin: 5%;
+    letter-spacing: 3px;
+}
+
+.money-transfers{
+    display: flex;
+    justify-content: space-between;
+    min-width: 260px;
+    margin: 2%;
+    font-size: 18px;
+    padding: 10px 13px;
+}
+
+#income {
+    background-color: #25B0AB;
+
+}
+
+#expenses {
+    background-color: #FF4745;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
+    padding:1%;
+}
+
+.controls-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 6px 12px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#save:hover{
+    background-color: lightskyblue;
+    
+}
+
+#transfers-list {
+    display: flex;
+    justify-content: center;
+}
+.transfers {
+    width: 27%;
+    margin: 5% 2%;
+}
+.transfers-list {
+    border-top: 2px solid lightgrey;
+}
+
+.single-transfer{
+    list-style: none;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    border-bottom: 2px solid lightgrey;
+}
+
+#transfers-income-title {
+    color: #25B0AB;
+}
+
+#transfers-expenses-title {
+    color: #FF4745;
+}
+
+.positiveAmount {
+    color: #55e004;
+}
+
+.negativeAmount {
+    color: red;
+}
+
+.income-item .income-amount {
+    color: #25B0AB;
+    margin-right: 10px;
+}
+
+.expenses-item .expenses-amount {
+    color:#FF4745;
+    margin-right: 10px;
+}
+
+.expensesPercentage {
+    font-size: 18px;
+    background-color: lightcoral;
+    border-radius: 7px;
+    padding: 1px 2px;
+}
+
+.delete-item {
+    padding: 2px;
+    outline: none;
+    
+}
+
+.income-delete {
+    background-color: #25B0AB;
+}
+
+.expenses-delete {
+    background-color:#FF4745;
+}
+
+.delete-item:active, {
+    background-color: rgba(238, 235, 235);
+    outline: none;
+}
+
+.controls {
+    background-color: lightgray;
+}
+
+.type-income {
+    background-color: #25B0AB !important;
+}
+
+.type-expense {
+    background-color: #FF4745 !important;
+}
+

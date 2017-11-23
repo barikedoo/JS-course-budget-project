@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budgety</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header id="header">
+        <section id="info-block">
+            <div>
+                <h3 id="info-block__header">
+                    <span>Available Budget in</span>
+                    <span id="header__date"></span>
+                </h3>
+            </div>
+            <span id="current-budget" class="positiveAmount">0</span>
+
+
+            <div class="money-transfers" id="income">
+                <span class="text">INCOME</span>
+                <div>
+                    <!-- <span>+</span> -->
+                    <span class="numbers" id="incomeCounter">0</span>
+                </div>
+            </div>
+
+
+            <div class="money-transfers" id="expenses">
+                <span class="text">EXPENSES</span>
+                <div>
+                    <!-- <span>-</span> -->
+                    <span class="numbers" id="expensesCounter">0</span>
+                    <span class="numbers expensesPercentage" id="expensesPercentage">0</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section id="controls" class="controls">
+        <select name="transfer" id="transferType" class="controls-input">
+            <option value="inc">+</option>
+            <option value="exp">-</option>
+        </select>
+        <input type="text" placeholder="Add description" class="controls-input" id="description">
+        <input type="number" placeholder="Amount" class="controls-input" id="currentValue">
+        <button class="controls-input" id="save"> Save </button>
+    </section>
+
+    <section id="transfers-list">
+
+        <div class="transfers">
+            <h2 id="transfers-income-title">INCOME</h2>
+            <div class="transfers-list" id="income-list">
+
+                <!-- <div class="single-transfer income-item">
+                    <span>Some income</span>
+                    <div>
+                        <span class="expenses-amount">- 2,500</span>
+                        <button class="delete-item income-delete">X</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="transfers">
+            <h2 id="transfers-expenses-title">EXPENSES</h2>
+            <div class="transfers-list" id="expenses-list">
+
+                <!-- <div class="single-transfer expenses-item">
+                    <span>Some Expense</span>
+                    <div>
+                        <span class="expenses-amount">- 2,500</span>
+                        <button class="delete-item expenses-delete">X</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
